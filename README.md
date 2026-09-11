@@ -77,6 +77,16 @@ For the Head of Product's own operating rhythm and judgment calls: an orchestrat
 
 ## Installation
 
+### Claude Cowork (recommended for non-developers)
+
+1. Open **Customize** (bottom-left)
+2. Go to **Plugins** → **Personal** → **+**
+3. Select **Add marketplace from GitHub**
+4. Enter: `louis3979/pm-skills`
+5. Click **Sync**
+
+Both plugins install automatically. You get both commands (`/copilot`, `/gate-release`, etc.) and skills.
+
 ### Claude Code (CLI)
 
 ```bash
