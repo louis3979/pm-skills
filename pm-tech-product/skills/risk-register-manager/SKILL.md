@@ -32,8 +32,11 @@ Run this at the start of delivery planning (alongside `wbs-scope-decomposer` and
 ```
 ## Risk Register: [project/initiative]
 
-| # | Risk | Probability | Impact | Response Strategy | Response Plan | Owner | Trigger |
-|---|------|:---:|:---:|---|---|---|---|
+| # | Risk | Probability | Impact | Strategy | Owner |
+|---|------|:---:|:---:|---|---|
+
+### Response plans & triggers
+1. **[Risk name]** — Plan: [response plan detail]. Trigger: [monitoring signal].
 
 ### Top 3 risks needing attention this cycle
 1. ...

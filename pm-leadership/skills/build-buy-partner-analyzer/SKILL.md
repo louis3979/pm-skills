@@ -28,9 +28,18 @@ Check the product vision/strategy, if available, for whether this capability is 
 <core differentiator / commodity, and why — e.g. "Commodity: payment reconciliation isn't a differentiator for a retail SaaS product">
 
 ## Option Comparison
-| Option | Cost | Time-to-value | Control | Differentiation value | Maintenance burden | Lock-in risk |
-|---|---|---|---|---|---|---|
-| Build | [high upfront] | [6-9 months] | [full] | [low, if commodity] | [ongoing eng cost] | [none] |
+| Option | Cost | Time-to-value | Lock-in risk |
+|---|---|---|---|
+| Build | [high upfront] | [6-9 months] | [none] |
+| Buy | [subscription] | [weeks] | [medium-high] |
+| Partner | [rev-share or fee] | [weeks-months] | [low-medium] |
+| Outsource | [contract cost] | [weeks] | [medium] |
+
+### Control, differentiation & maintenance detail
+- **Build** — Control: [full]; Differentiation value: [low, if commodity]; Maintenance burden: [ongoing eng cost]
+- **Buy** — Control: ...; Differentiation value: ...; Maintenance burden: ...
+- **Partner** — Control: ...; Differentiation value: ...; Maintenance burden: ...
+- **Outsource** — Control: ...; Differentiation value: ...; Maintenance burden: ...
 
 ## Recommendation
 <option, with rationale>

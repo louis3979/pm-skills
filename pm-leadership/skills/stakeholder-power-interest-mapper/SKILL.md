@@ -33,8 +33,11 @@ Use this when kicking off an initiative with more than a couple of stakeholders 
 ## Stakeholder Map: [initiative]
 
 ### Grid
-| Stakeholder | Power | Interest | Quadrant | Engagement Approach | Owner |
-|---|---|---|---|---|---|
+| Stakeholder | Power | Interest | Quadrant | Owner |
+|---|---|---|---|---|
+
+### Engagement approach per stakeholder
+- **[Stakeholder]** — [cadence, format, and what this relationship needs]
 
 ### Stakeholders likely to shift quadrant
 - [who, why, when to re-map]
