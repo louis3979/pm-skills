@@ -1,6 +1,6 @@
 # pm-tech-product
 
-Requirements and delivery rigor for technology/IT product PMs: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, and cross-system data consistency.
+Requirements and delivery rigor for technology/IT product PMs: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.
 
 ## Overview
 
@@ -10,7 +10,7 @@ Fills the gap between "a PRD exists" and "engineering can safely build it" for a
 
 Add the marketplace and install this plugin (or the whole collection) the same way as any other `pm-skills` plugin — see the root [README.md](../README.md) for the marketplace add/install commands.
 
-## Skills (14)
+## Skills (19)
 
 - **business-process-modeler** — Formalize a raw business workflow into actors, process flow, documents, state machine, exception flows, and a permission matrix.
 - **business-rule-designer** — Convert fuzzy business logic in prose into explicit, classified IF/THEN rules.
@@ -26,14 +26,20 @@ Add the marketplace and install this plugin (or the whole collection) the same w
 - **data-consistency-reviewer** — Review consistency across any systems/domains sharing the same underlying data, with attention to double writes and race conditions.
 - **document-numbering-designer** — Design human-readable, collision-free numbering schemes for any user-facing record/document type.
 - **reconciliation-designer** — Design a process to detect and resolve drift between two systems or two views of the same data.
+- **wbs-scope-decomposer** — Break a large deliverable/epic into a Work Breakdown Structure with in/out-of-scope, deliverables, and acceptance criteria.
+- **schedule-critical-path-analyzer** — Sequence activities, estimate durations, identify the critical path, and assess the real schedule impact of a delay.
+- **risk-register-manager** — Build and maintain a risk register: identify, analyze probability × impact, plan a response, define monitoring triggers.
+- **change-control-manager** — Run a scope/requirement change through Integrated Change Control: impact analysis, decision, baseline update, communication.
+- **project-metrics-tracker** — Track delivery performance with PV/EV/AC/SPI/CPI and modern flow metrics, and force the output-vs-outcome distinction.
 
-## Commands (5)
+## Commands (6)
 
 - `/pm-tech-product:model-business-process` — Formalize a raw business workflow into actors, states, and explicit rules before it becomes a PRD.
 - `/pm-tech-product:prep-technical-handoff` — Translate a requirement into technical impact areas and run a security pass before engineering starts.
 - `/pm-tech-product:gate-release` — Generate adversarial QA test scenarios and run the go/no-go release checklist in one pass.
 - `/pm-tech-product:setup-access-controls` — Design the full control layer for a feature/module: permissions, approval chain, audit logging, record numbering.
 - `/pm-tech-product:audit-data-consistency` — Audit a feature or flow for cross-system data consistency risk and design the reconciliation safety net.
+- `/pm-tech-product:plan-delivery-risk` — Plan a large deliverable from scope breakdown through schedule/critical path to a tracked risk register, in one pass.
 
 ## Author
 
