@@ -1,13 +1,13 @@
 {
   "name": "pm-tech-product",
   "version": "2.0.0",
-  "description": "Requirements and delivery rigor for technology/IT product PMs: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.",
+  "description": "Requirements and delivery rigor for technology/IT product PMs: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning, business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.",
   "author": {
     "name": "Louis",
     "email": "louis@janitorlab.com",
     "url": "https://github.com/louis3979/pm-skills"
   },
-  "keywords": ["product-management", "requirements", "business-process", "business-rules", "security-review", "qa", "release-management", "rbac", "data-consistency", "audit-trail", "pmbok", "risk-management", "wbs", "critical-path", "change-control"],
+  "keywords": ["product-management", "requirements", "prd", "user-stories", "sprint-planning", "business-process", "business-rules", "security-review", "qa", "release-management", "rbac", "data-consistency", "audit-trail", "pmbok", "risk-management", "wbs", "critical-path", "change-control"],
   "homepage": "https://github.com/louis3979/pm-skills",
   "license": "MIT"
 }

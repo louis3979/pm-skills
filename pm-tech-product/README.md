@@ -1,6 +1,6 @@
 # pm-tech-product
 
-Requirements and delivery rigor for technology/IT product PMs: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.
+Requirements and delivery rigor for technology/IT product PMs: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning, business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.
 
 ## Overview
 
@@ -10,8 +10,14 @@ Fills the gap between "a PRD exists" and "engineering can safely build it" for a
 
 Add the marketplace and install this plugin (or the whole collection) the same way as any other `pm-skills` plugin — see the root [README.md](../README.md) for the marketplace add/install commands.
 
-## Skills (19)
+## Skills (25)
 
+- **prd-writer** — Write a full PRD from a raw brief, idea, or rough workflow description — problem, scope, business rules, permissions, states, edge cases, acceptance criteria.
+- **requirement-analyzer** — Adversarially review a requirement/PRD for missing requirements, conflicts, ambiguity, and undefined permission/state/rollback cases.
+- **state-machine-designer** — Design a complete state machine for any stateful entity — states, transitions, actors, conditions, side effects, illegal transitions.
+- **acceptance-criteria-generator** — Generate exhaustive Given/When/Then acceptance criteria: happy path, negative path, permission cases, state cases.
+- **user-story-writer** — Turn a PRD/epic into an Epic + user stories + acceptance criteria + dependencies + Definition of Done.
+- **sprint-planner** — Plan a sprint from a prioritized backlog and real team capacity — scope, dependency check, load balance, risk.
 - **business-process-modeler** — Formalize a raw business workflow into actors, process flow, documents, state machine, exception flows, and a permission matrix.
 - **business-rule-designer** — Convert fuzzy business logic in prose into explicit, classified IF/THEN rules.
 - **technical-product-analyst** — Translate a requirement/PRD into concrete technical impact areas across 10 surfaces (frontend, backend, API, data, integration, security, and more).
@@ -32,8 +38,9 @@ Add the marketplace and install this plugin (or the whole collection) the same w
 - **change-control-manager** — Run a scope/requirement change through Integrated Change Control: impact analysis, decision, baseline update, communication.
 - **project-metrics-tracker** — Track delivery performance with PV/EV/AC/SPI/CPI and modern flow metrics, and force the output-vs-outcome distinction.
 
-## Commands (6)
+## Commands (7)
 
+- `/pm-tech-product:write-prd` — Write a full PRD from a raw idea or workflow description, with an adversarial review pass before it's done.
 - `/pm-tech-product:model-business-process` — Formalize a raw business workflow into actors, states, and explicit rules before it becomes a PRD.
 - `/pm-tech-product:prep-technical-handoff` — Translate a requirement into technical impact areas and run a security pass before engineering starts.
 - `/pm-tech-product:gate-release` — Generate adversarial QA test scenarios and run the go/no-go release checklist in one pass.
