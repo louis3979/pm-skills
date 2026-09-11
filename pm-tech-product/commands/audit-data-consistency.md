@@ -1,18 +1,18 @@
 ---
-description: Audit a feature or flow for cross-system data consistency risk across inventory, orders, payments, and accounting
+description: Audit a feature or flow for cross-system data consistency risk when it writes to more than one system or view of the same data
 argument-hint: "<feature or flow to audit>"
 ---
 
-# /audit-erp-consistency -- ERP Consistency Audit
+# /audit-data-consistency -- Data Consistency Audit
 
 Check a feature or flow for the class of bug that generic testing misses: two systems (or two views of the same event) quietly drifting apart. Produces one consolidated consistency-risk report.
 
 ## Invocation
 
 ```
-/audit-erp-consistency Order-to-payment flow for the new checkout redesign
-/audit-erp-consistency Inventory adjustments made from the mobile warehouse app
-/audit-erp-consistency [paste a PRD or system design]
+/audit-data-consistency Order-to-payment flow for the new checkout redesign
+/audit-data-consistency Profile updates that fan out to search index and cache
+/audit-data-consistency [paste a PRD or system design]
 ```
 
 ## Workflow
@@ -20,41 +20,31 @@ Check a feature or flow for the class of bug that generic testing misses: two sy
 ### Step 1: Scope the Audit
 
 Ask if not already clear:
-- Which domains does this feature touch: inventory, orders, transfers, payments, accounting, reports?
+- Which systems/domains does this feature touch (primary datastore, cache, search index, billing, reporting, a downstream service)?
 - Is this a design review (nothing built yet) or an investigation of an observed discrepancy?
 
 ### Step 2: Check Design-Time Consistency
 
 Apply the **data-consistency-reviewer** skill:
 
-- Map each domain to its single source of truth
+- Map each system/domain to its single source of truth
 - Check idempotency on every write, and locking/conflict strategy on every shared entity
 - Trace one end-to-end example through all layers
 
-### Step 3: Check the Financial Chain
-
-Apply the **financial-transaction-consistency-reviewer** skill (skip if the feature has no financial layer):
-
-- Map Business Document → Operational Transaction → Financial Transaction → Accounting Entry
-- Check atomicity of every transition and idempotency of every retryable financial operation
-
-### Step 4: Design the Safety Net
+### Step 3: Design the Safety Net
 
 Apply the **reconciliation-designer** skill:
 
-- Define the join key and match/tolerance definition for the domains in scope
+- Define the join key and match/tolerance definition for the systems in scope
 - Define cadence, escalation threshold, and how resolved mismatches are recorded
 
-### Step 5: Consolidate the Report
+### Step 4: Consolidate the Report
 
 ```
-## ERP Consistency Audit: [feature/flow]
+## Data Consistency Audit: [feature/flow]
 
 ### Design-Time Findings
 [source-of-truth map, idempotency findings, race/concurrency findings]
-
-### Financial Chain Findings (if applicable)
-[four-layer map, atomicity findings, idempotency findings]
 
 ### Recommended Reconciliation Process
 [data sets, join key, tolerance, cadence, escalation]
@@ -65,11 +55,10 @@ Safe to proceed / Needs redesign / Needs a reconciliation job before proceeding
 
 Save as markdown.
 
-### Step 6: Offer Next Steps
+### Step 5: Offer Next Steps
 
-- "Want me to **check the inventory quantity math specifically** with an inventory flow design pass?"
-- "Should I **design the audit-trail logging** for the actions involved?"
-- "Want me to **review the accounting treatment** itself, not just cross-system agreement?"
+- "Should I **design the audit-trail logging** for the actions involved (`/setup-access-controls`)?"
+- "Want a **security review** of this same flow (`/prep-technical-handoff`)?"
 
 ## Notes
 

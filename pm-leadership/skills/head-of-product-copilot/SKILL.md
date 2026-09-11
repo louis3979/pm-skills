@@ -33,7 +33,7 @@ If any of this plugin's other skills, or skills from other installed PM Skills p
 ## Skills consulted
 | Skill | Why it was called | Key conclusion |
 |---|---|---|
-| [e.g. inventory-domain-expert] | [confirm current logic is sound] | [manual, formula-inconsistent across warehouses] |
+| [e.g. technical-product-analyst] | [confirm the requirement's technical impact surface] | [moderate backend complexity, low frontend impact] |
 
 ## Recommendation
 <clear stance, e.g. "Build MVP">

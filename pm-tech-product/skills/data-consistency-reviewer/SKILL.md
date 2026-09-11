@@ -1,6 +1,6 @@
 ---
 name: data-consistency-reviewer
-description: "Review consistency across inventory, orders, transfers, payments, accounting, and reports, with specific attention to double posting and race conditions. Use before shipping a feature that writes to more than one of these domains."
+description: "Review consistency across any set of systems/domains that share the same underlying data (e.g. a primary datastore, a cache, a search index, a billing system, a reporting pipeline), with specific attention to double writes and race conditions. Use before shipping a feature that writes to more than one system or view of the same data."
 ---
 
 # Data Consistency Reviewer
@@ -51,4 +51,4 @@ Safe to proceed / Needs redesign
 
 - If engineering hasn't yet decided on a concurrency/idempotency strategy, don't assume one — mark the verdict "Needs redesign" or "Blocked pending engineering decision" rather than silently approving.
 - Example: "Feature lets two staff approve the same transfer request" → flag the race ("both approvals could commit before either sees the other"), recommend optimistic locking with a `version` field and a re-check-before-write pattern.
-- For money-specific consistency, run **financial-transaction-consistency-reviewer**; if drift is already occurring rather than being prevented, hand off to **reconciliation-designer**.
+- If drift is already occurring rather than being prevented, hand off to **reconciliation-designer** to design the detection/resolution process.

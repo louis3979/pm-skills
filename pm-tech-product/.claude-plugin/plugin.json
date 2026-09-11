@@ -1,0 +1,13 @@
+{
+  "name": "pm-tech-product",
+  "version": "2.0.0",
+  "description": "Requirements and delivery rigor for technology/IT product PMs: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, and cross-system data consistency.",
+  "author": {
+    "name": "LDJ",
+    "email": "ldj.com.vn@gmail.com",
+    "url": "https://github.com/louis3979/pm-skills"
+  },
+  "keywords": ["product-management", "requirements", "business-process", "business-rules", "security-review", "qa", "release-management", "rbac", "data-consistency", "audit-trail"],
+  "homepage": "https://github.com/louis3979/pm-skills",
+  "license": "MIT"
+}

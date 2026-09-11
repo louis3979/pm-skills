@@ -2,50 +2,18 @@
 
 # PM Skills: an AI Operating System for Head-of-Product work
 
-> 34 skills and 9 chained workflows across 3 plugins for Claude Code and Claude Cowork. ERP/retail/inventory domain intelligence, enterprise requirements rigor, and Head-of-Product leadership.
+> 24 skills and 8 chained workflows across 2 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor and Head-of-Product leadership — focused on technology/IT products, not business-vertical domain knowledge.
 
 Built from a Head-of-Product skill analysis: each skill encodes a concrete workflow (input → framework → output), not a generic prompt. Each command chains one or more skills into an end-to-end process.
 
 ## Plugins
 
 <details>
-<summary><strong>1. pm-erp-domain</strong> — ERP, retail, and inventory domain intelligence: stock logic, transfers, procurement, RBAC, reconciliation (16 skills, 3 commands)</summary>
+<summary><strong>1. pm-tech-product</strong> — Requirements and delivery rigor for technology/IT products: process modeling, business rules, security, QA, release gating, access control, audit logging, data consistency (14 skills, 5 commands)</summary>
 
-For PMs building on ERP, retail, warehouse, or accounting-adjacent systems. Fills the domain gap generic PM frameworks don't cover: the operational and financial correctness rules specific to inventory, transfers, procurement, and access control.
+Fills the gap between "a PRD exists" and "engineering can safely build it" for any tech product with real state, permission, and data-consistency complexity — not tied to a specific business vertical.
 
-**Skills (16):**
-
-- `inventory-domain-expert` — Validate on-hand/available/reserved stock quantity formulas and state transitions for internal consistency
-- `inventory-transaction-reviewer` — Verify every stock-changing action produces a complete, traceable transaction record
-- `warehouse-workflow-designer` — Design a complete warehouse operational process with actors and exception paths
-- `stock-transfer-designer` — Standardize the Request → Approval → Allocation → Pick → Ship → Receive → Reconcile transfer lifecycle
-- `allocation-rule-designer` — Design the rule that decides who gets how much when demand exceeds supply
-- `procurement-domain-expert` — Validate a purchase-to-pay flow against standard 3-way-match discipline
-- `accounting-logic-reviewer` — Check a requirement's financial logic for gaps before it reaches finance engineering
-- `financial-transaction-consistency-reviewer` — Check that a document, transaction, and accounting entry stay consistent end-to-end
-- `rbac-permission-designer` — Design role-based permission matrices for a business workflow
-- `approval-workflow-designer` — Design multi-level approval chains with thresholds, delegation, and escalation
-- `audit-trail-designer` — Specify what must be logged for every state-changing action
-- `data-consistency-reviewer` — Review cross-domain consistency (inventory/orders/payments/accounting/reports) before shipping
-- `document-numbering-designer` — Design human-readable, collision-free document numbering schemes
-- `reconciliation-designer` — Design a process to detect and resolve drift between two systems
-- `retail-domain-expert` — Apply correct retail domain concepts (store, POS, promotion, cash shift) to a requirement
-- `product-master-data-designer` — Design the product/variant/SKU master data model
-
-**Commands (3):**
-
-- `/design-inventory-flow` — Design a complete inventory/stock-transfer flow from a raw scenario
-- `/audit-erp-consistency` — Audit a feature or flow for cross-system data consistency risk
-- `/setup-erp-controls` — Design the full control layer (permissions, approvals, audit logging, numbering) for a workflow
-
-</details>
-
-<details>
-<summary><strong>2. pm-requirements-plus</strong> — Requirements and delivery rigor for complex/enterprise systems: process modeling, business rules, security, QA, release gating (8 skills, 3 commands)</summary>
-
-Fills the gap between "a PRD exists" and "engineering can safely build it" for workflows with real state, permission, and data-consistency complexity — the kind common in ERP, B2B SaaS, and other operationally heavy products.
-
-**Skills (8):**
+**Skills (14):**
 
 - `business-process-modeler` — Formalize a raw business workflow into actors, process flow, documents, state machine, exception flows, and a permission matrix
 - `business-rule-designer` — Convert fuzzy business logic in prose into explicit, classified IF/THEN rules
@@ -55,17 +23,25 @@ Fills the gap between "a PRD exists" and "engineering can safely build it" for w
 - `release-manager` — Run a go/no-go release checklist and render a GO / GO WITH RISK / NO-GO verdict
 - `problem-validator` — Validate whether a suspected user problem is real, how big, and how urgent
 - `persona-builder` — Build an evidence-based persona from research/interview data, with every attribute traced to a source
+- `rbac-permission-designer` — Design role-based permission matrices for any feature or module
+- `approval-workflow-designer` — Design multi-level approval chains with thresholds, delegation, and escalation
+- `audit-trail-designer` — Specify what must be logged for every state-changing action
+- `data-consistency-reviewer` — Review consistency across any systems/domains sharing the same underlying data
+- `document-numbering-designer` — Design human-readable, collision-free numbering schemes for any record type
+- `reconciliation-designer` — Design a process to detect and resolve drift between two systems
 
-**Commands (3):**
+**Commands (5):**
 
 - `/model-business-process` — Formalize a raw business workflow into actors, states, and explicit rules before it becomes a PRD
 - `/prep-technical-handoff` — Translate a requirement into technical impact areas and run a security pass
 - `/gate-release` — Generate adversarial QA test scenarios and run the go/no-go release checklist
+- `/setup-access-controls` — Design the full control layer (permissions, approvals, audit logging, numbering) for a feature
+- `/audit-data-consistency` — Audit a feature or flow for cross-system data consistency risk
 
 </details>
 
 <details>
-<summary><strong>3. pm-leadership</strong> — Head-of-Product leadership workflows: copilot orchestrator, weekly digests, 1:1 prep, board updates, hiring (10 skills, 3 commands)</summary>
+<summary><strong>2. pm-leadership</strong> — Head-of-Product leadership workflows: copilot orchestrator, weekly digests, 1:1 prep, board updates, hiring (10 skills, 3 commands)</summary>
 
 For the Head of Product's own operating rhythm and judgment calls: an orchestrator that routes broad questions to the right specialist skill, plus the recurring artifacts of running a product organization.
 
@@ -99,8 +75,7 @@ For the Head of Product's own operating rhythm and judgment calls: an orchestrat
 claude plugin marketplace add louis3979/pm-skills
 
 # Step 2: Install individual plugins
-claude plugin install pm-erp-domain@pm-skills
-claude plugin install pm-requirements-plus@pm-skills
+claude plugin install pm-tech-product@pm-skills
 claude plugin install pm-leadership@pm-skills
 ```
 

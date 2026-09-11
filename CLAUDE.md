@@ -4,13 +4,13 @@ Guidance for AI agents working in this repository.
 
 ## Project Overview
 
-**pm-skills** — a marketplace of 3 independent plugins (34 skills, 9 commands) for Head-of-Product work: ERP/retail/inventory domain intelligence, enterprise requirements rigor, and Head-of-Product leadership workflows.
+**pm-skills** — a marketplace of 2 independent plugins (24 skills, 8 commands) for Head-of-Product work on technology/IT products: tech-product requirements/delivery rigor and Head-of-Product leadership workflows.
 
 ## Repo Structure
 
 ```
 pm-skills/
-├── .claude-plugin/marketplace.json   <- root marketplace manifest (lists all 3 plugins)
+├── .claude-plugin/marketplace.json   <- root marketplace manifest (lists all 2 plugins)
 ├── LICENSE                           <- MIT
 ├── README.md                         <- public documentation
 └── pm-{name}/                        <- plugin directories

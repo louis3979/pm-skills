@@ -1,6 +1,6 @@
 ---
 name: rbac-permission-designer
-description: "Design role-based permission matrices (role, organization, warehouse, store, document ownership, status, action) for a business workflow or module. Use when a feature needs its access-control rules specified before implementation."
+description: "Design role-based permission matrices (role, organization/tenant, resource scope, ownership, status, action) for a feature or module in any software product. Use when a feature needs its access-control rules specified before implementation."
 ---
 
 # RBAC Permission Designer
