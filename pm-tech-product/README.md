@@ -37,7 +37,7 @@ Add the marketplace and install this plugin (or the whole collection) the same w
 
 ## Author
 
-LDJ
+Louis
 
 ## License
 

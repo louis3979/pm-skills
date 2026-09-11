@@ -23,7 +23,7 @@ Head-of-Product leadership workflows: a copilot that routes broad questions to t
 
 ## Author
 
-LDJ
+Louis
 
 ## License
 
