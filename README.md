@@ -6,6 +6,16 @@
 
 Built from a Head-of-Product skill analysis: each skill encodes a concrete workflow (input → framework → output), not a generic prompt. Each command chains one or more skills into an end-to-end process.
 
+## Start Here
+
+Broad question, don't know where to start? → `/copilot`
+Need strategic clarity? → `/set-strategy`
+Writing a PRD? → `/write-prd`
+Planning delivery (scope/schedule/risk)? → `/plan-delivery-risk`
+Ready to release? → `/gate-release`
+
+If this project helps you, ⭐ the repo.
+
 ## Plugins
 
 <details>
