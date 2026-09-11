@@ -4,7 +4,7 @@ Guidance for AI agents working in this repository.
 
 ## Project Overview
 
-**pm-skills** — a marketplace of 2 independent plugins (40 skills, 12 commands) for Head-of-Product work on technology/IT products: tech-product requirements/delivery rigor (PRD writing through PMBOK-grounded scope/schedule/risk/change management) and Head-of-Product leadership workflows (strategy, roadmap, prioritization included).
+**pm-skills** — a marketplace of 3 independent plugins (50 skills, 22 commands) for Head-of-Product work on technology/IT products: tech-product requirements/delivery rigor, Head-of-Product leadership workflows, and a markdown-native project memory system.
 
 ## Repo Structure
 

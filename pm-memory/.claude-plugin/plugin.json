@@ -1,0 +1,13 @@
+{
+  "name": "pm-memory",
+  "version": "1.0.0",
+  "description": "A markdown-native project memory system for a product operator: durable knowledge, decisions, hypotheses, and stakeholder tracking that survives context loss between sessions, with a source-to-knowledge ingestion pipeline and a weekly maintenance sweep. Inspired by the second-brain model in phuryn/pm-brain, rebuilt in this marketplace's own skill/command conventions.",
+  "author": {
+    "name": "Louis",
+    "email": "louis@janitorlab.com",
+    "url": "https://github.com/louis3979/pm-skills"
+  },
+  "keywords": ["product-management", "memory", "knowledge-base", "decisions", "hypotheses", "stakeholders", "second-brain", "context"],
+  "homepage": "https://github.com/louis3979/pm-skills",
+  "license": "MIT"
+}

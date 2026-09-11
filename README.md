@@ -2,7 +2,7 @@
 
 # PM Skills: an AI Operating System for Head-of-Product work
 
-> 40 skills and 12 chained workflows across 2 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor (PRD writing through PMBOK-grounded scope/schedule/risk/change management) and Head-of-Product leadership (strategy, roadmap, prioritization included) — focused on technology/IT products, not business-vertical domain knowledge.
+> 50 skills and 22 chained workflows across 3 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system — focused on technology/IT products, not business-vertical domain knowledge.
 
 Built from a Head-of-Product skill analysis: each skill encodes a concrete workflow (input → framework → output), not a generic prompt. Each command chains one or more skills into an end-to-end process.
 
@@ -13,6 +13,7 @@ Need strategic clarity? → `/set-strategy`
 Writing a PRD? → `/write-prd`
 Planning delivery (scope/schedule/risk)? → `/plan-delivery-risk`
 Ready to release? → `/gate-release`
+Worried you'll forget something important? → `/init-memory`, then `/ingest`
 
 If this project helps you, ⭐ the repo.
 
@@ -96,6 +97,39 @@ For the Head of Product's own operating rhythm and judgment calls: an orchestrat
 
 </details>
 
+<details>
+<summary><strong>3. pm-memory</strong> — A markdown-native project memory system: durable knowledge, decisions, hypotheses, and stakeholder tracking that survives context loss between sessions (10 skills, 10 commands)</summary>
+
+One operator, one product/initiative. `/init-memory` scaffolds a folder structure: raw artifacts land in `source/` (immutable), get synthesized into `ingestion/` (tagged observation/interpretation/hypothesis/assumption), and propagate into the durable layer — `knowledge/`, `hypotheses/` (evidence + confidence score), `decisions/` (audit trail + reversal condition), `stakeholders/` (touchpoints and cadence). A weekly `/review` sweep is what keeps it from rotting. Inspired by the second-brain model in [phuryn/pm-brain](https://github.com/phuryn/pm-brain), rebuilt in this marketplace's own conventions.
+
+**Skills (10):**
+
+- `memory-init` — Scaffold the memory folder structure into the current directory; detects greenfield/migration/active-repo, runs a short interview, commits locally (never pushes)
+- `memory-ingest` — The workhorse: classify a raw artifact, copy it to `source/`, tag observations in `ingestion/`, propagate to the durable layer as warranted
+- `memory-prep` — Read-only pre-meeting brief for a stakeholder or topic: last touchpoint, open asks, suggested questions
+- `memory-review` — Weekly maintenance sweep: stale knowledge, stale evidence, hypothesis hygiene, stakeholder cadence, knowledge compression, archival
+- `memory-decide` — Formalize a decision with a full evidence trail and reversal condition, drafted `pending` until the operator confirms it
+- `memory-hypothesize` — Draft or update a tracked belief with evidence, confidence score, and a decision trigger
+- `memory-risk-scan` — Five-area risk scan for a feature/initiative, drafting hypothesis stubs for uncovered areas
+- `memory-ideate` — Grounded solution directions for a problem area, tagged with the evidence behind each
+- `memory-plan` — Six-block plan for an objective: known, assumed, who to talk to, hypotheses to open, experiments, decision points
+- `memory-strategy-check` — Check a proposal against stated strategy, citing the specific clause
+
+**Commands (10):**
+
+- `/init-memory` — Initialize the project memory system in the current directory
+- `/ingest` — Ingest a raw artifact into project memory
+- `/prep` — Pre-meeting/pre-task brief for a stakeholder or topic
+- `/review` — Run the weekly maintenance sweep
+- `/decide` — Formalize a decision with an evidence trail
+- `/hypothesize` — Draft or update a tracked hypothesis
+- `/risk-scan` — Five-area risk scan for a feature/initiative
+- `/ideate` — Grounded solution directions for a problem area
+- `/plan` — Six-block plan for an objective
+- `/strategy-check` — Check a proposal against stated strategy
+
+</details>
+
 ## Installation
 
 ### Claude Cowork (recommended for non-developers)
@@ -117,6 +151,7 @@ claude plugin marketplace add louis3979/pm-skills
 # Step 2: Install individual plugins
 claude plugin install pm-tech-product@pm-skills
 claude plugin install pm-leadership@pm-skills
+claude plugin install pm-memory@pm-skills
 ```
 
 ### Other AI assistants (skills only)
