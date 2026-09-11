@@ -1,0 +1,13 @@
+{
+  "name": "pm-requirements-plus",
+  "version": "2.2.0",
+  "description": "Requirements and delivery rigor for PMs building on complex/enterprise systems: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, and release go/no-go gating.",
+  "author": {
+    "name": "LDJ",
+    "email": "ldj.com.vn@gmail.com",
+    "url": "https://github.com/louis3979/pm-skills"
+  },
+  "keywords": ["product-management", "requirements", "business-process", "business-rules", "security-review", "qa", "release-management"],
+  "homepage": "https://github.com/louis3979/pm-skills",
+  "license": "MIT"
+}

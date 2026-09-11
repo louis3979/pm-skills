@@ -1,0 +1,7 @@
+# Private maintainer-only files — never commit
+_Internal/
+CLAUDE.local.md
+
+# Local tooling artifacts
+__pycache__/
+.claude/

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pm-skills",
+  "version": "1.0.0",
+  "description": "Structured AI workflows for Head-of-Product work: 34 domain-specific skills and 9 chained workflows across 3 plugins — ERP/retail/inventory domain intelligence, enterprise requirements rigor, and Head-of-Product leadership.",
+  "owner": {
+    "name": "LDJ",
+    "email": "ldj.com.vn@gmail.com",
+    "url": "https://github.com/louis3979/pm-skills"
+  },
+  "plugins": [
+    {
+      "name": "pm-erp-domain",
+      "description": "ERP, retail, and inventory domain intelligence for PMs: stock logic, warehouse workflows, transfers, allocation, procurement, accounting consistency, RBAC, audit trails, and reconciliation for ERP/retail/warehouse systems.",
+      "source": "./pm-erp-domain",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-requirements-plus",
+      "description": "Requirements and delivery rigor for PMs building on complex/enterprise systems: business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, and release go/no-go gating.",
+      "source": "./pm-requirements-plus",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-leadership",
+      "description": "Head-of-Product leadership workflows: a copilot that routes broad questions to the right specialist skill, weekly digests, 1:1 prep, board updates, hiring briefs, decision memos, and product-health rollups.",
+      "source": "./pm-leadership",
+      "category": "product-management"
+    }
+  ]
+}

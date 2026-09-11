@@ -1,0 +1,23 @@
+{
+  "name": "pm-erp-domain",
+  "version": "2.2.0",
+  "description": "ERP, retail, and inventory domain intelligence for PMs: stock logic, warehouse workflows, transfers, allocation, procurement, accounting consistency, RBAC, audit trails, and reconciliation for ERP/retail/warehouse systems.",
+  "author": {
+    "name": "LDJ",
+    "email": "ldj.com.vn@gmail.com",
+    "url": "https://github.com/louis3979/pm-skills"
+  },
+  "keywords": [
+    "product-management",
+    "erp",
+    "inventory",
+    "retail",
+    "warehouse",
+    "rbac",
+    "reconciliation",
+    "procurement",
+    "accounting"
+  ],
+  "homepage": "https://github.com/louis3979/pm-skills",
+  "license": "MIT"
+}
