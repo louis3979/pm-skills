@@ -1,6 +1,6 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/louis3979/pm-skills/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/louis3979/pm-skills/blob/main/CONTRIBUTING.md)
-[![Tests](https://github.com/louis3979/pm-skills/actions/workflows/tests.yml/badge.svg)](https://github.com/louis3979/pm-skills/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/louis3979/pm-tech-skills/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/louis3979/pm-tech-skills/blob/main/CONTRIBUTING.md)
+[![Tests](https://github.com/louis3979/pm-tech-skills/actions/workflows/tests.yml/badge.svg)](https://github.com/louis3979/pm-tech-skills/actions/workflows/tests.yml)
 
 # PM Skills: an AI Operating System for Head-of-Product work
 
@@ -152,7 +152,7 @@ One operator, one product/initiative. `/init-memory` scaffolds a folder structur
 1. Open **Customize** (bottom-left)
 2. Go to **Plugins** → **Personal** → **+**
 3. Select **Add marketplace from GitHub**
-4. Enter: `louis3979/pm-skills`
+4. Enter: `louis3979/pm-tech-skills`
 5. Click **Sync**
 
 Both plugins install automatically. You get both commands (`/copilot`, `/gate-release`, etc.) and skills.
@@ -161,12 +161,12 @@ Both plugins install automatically. You get both commands (`/copilot`, `/gate-re
 
 ```bash
 # Step 1: Add the marketplace
-claude plugin marketplace add louis3979/pm-skills
+claude plugin marketplace add louis3979/pm-tech-skills
 
 # Step 2: Install individual plugins
-claude plugin install pm-tech-product@pm-skills
-claude plugin install pm-leadership@pm-skills
-claude plugin install pm-memory@pm-skills
+claude plugin install pm-tech-product@pm-tech-skills
+claude plugin install pm-leadership@pm-tech-skills
+claude plugin install pm-memory@pm-tech-skills
 ```
 
 ### Other AI assistants (skills only)

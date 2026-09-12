@@ -5,9 +5,9 @@
   "author": {
     "name": "Louis",
     "email": "louis@janitorlab.com",
-    "url": "https://github.com/louis3979/pm-skills"
+    "url": "https://github.com/louis3979/pm-tech-skills"
   },
   "keywords": ["product-management", "requirements", "prd", "user-stories", "sprint-planning", "retrospective", "brainstorming", "business-process", "business-rules", "security-review", "qa", "release-management", "rbac", "data-consistency", "audit-trail", "pmbok", "risk-management", "wbs", "critical-path", "change-control"],
-  "homepage": "https://github.com/louis3979/pm-skills",
+  "homepage": "https://github.com/louis3979/pm-tech-skills",
   "license": "MIT"
 }

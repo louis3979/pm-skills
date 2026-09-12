@@ -1,12 +1,12 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "pm-skills",
+  "name": "pm-tech-skills",
   "version": "3.0.0",
   "description": "Structured AI workflows for technology/IT product PMs: 56 domain-specific skills and 28 chained workflows across 3 plugins — tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system.",
   "owner": {
     "name": "Louis",
     "email": "louis@janitorlab.com",
-    "url": "https://github.com/louis3979/pm-skills"
+    "url": "https://github.com/louis3979/pm-tech-skills"
   },
   "plugins": [
     {
