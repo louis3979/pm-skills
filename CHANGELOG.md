@@ -8,7 +8,7 @@ All notable changes to this marketplace are documented here. The newest `## vX.Y
 - **BMAD-inspired skills**, adapted from `bmad-code-org/BMAD-METHOD` as self-contained skills with no dependency on that project's own scaffold/tooling:
   - `pm-tech-product`: `structured-brainstormer` (named-technique divergent brainstorming), `sprint-retrospective` (lightweight recurring retro), plus `/brainstorm` and `/sprint-retro`.
   - `pm-leadership`: `pr-faq-writer` (Amazon Working Backwards), `advanced-elicitation` (menu-driven critique techniques), `course-correction-planner` (mid-delivery disruption triage), `party-mode-debate` (simulated multi-persona roundtable), plus `/write-prfaq`, `/sharpen`, `/correct-course`, `/party-mode`.
-- **Governance/CI**: `scripts/validate.py` (manifest/frontmatter/README-sync validator, zero third-party dependencies), a real `.github/workflows/validate.yml` replacing the placeholder `blank.yml`, `CONTRIBUTING.md`, `SECURITY.md`.
+- **Governance/CI**: `scripts/validate.py` (manifest/frontmatter/README-sync validator, zero third-party dependencies), a real `.github/workflows/tests.yml` ("Tests" badge) replacing the placeholder `blank.yml`, `CONTRIBUTING.md`, `SECURITY.md`. README also gained "PRs welcome" and "Tests" badges.
 
 ### Changed
 - Version numbers across `marketplace.json` and all `plugin.json` files reset to a single consistent `3.0.0` (previously drifted independently — a gap this release's CI now prevents from recurring).

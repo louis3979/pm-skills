@@ -11,7 +11,7 @@ Guidance for AI agents working in this repository.
 ```
 pm-skills/
 ├── .claude-plugin/marketplace.json   <- root marketplace manifest (lists all 3 plugins)
-├── .github/workflows/validate.yml    <- CI: runs scripts/validate.py on every push/PR to main
+├── .github/workflows/tests.yml       <- CI ("Tests"): runs scripts/validate.py on every push/PR to main
 ├── scripts/validate.py               <- manifest/frontmatter/README-sync validator, no dependencies
 ├── CHANGELOG.md                      <- release source of truth
 ├── CONTRIBUTING.md                   <- how to add a skill/command, release process

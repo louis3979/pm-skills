@@ -1,5 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/louis3979/pm-skills/blob/main/LICENSE)
-[![Validate](https://github.com/louis3979/pm-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/louis3979/pm-skills/actions/workflows/validate.yml)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/louis3979/pm-skills/blob/main/CONTRIBUTING.md)
+[![Tests](https://github.com/louis3979/pm-skills/actions/workflows/tests.yml/badge.svg)](https://github.com/louis3979/pm-skills/actions/workflows/tests.yml)
 
 # PM Skills: an AI Operating System for Head-of-Product work
 

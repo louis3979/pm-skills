@@ -34,7 +34,7 @@ Run the validator from the repo root:
 python3 scripts/validate.py
 ```
 
-It checks JSON validity, required manifest fields, name-matches-directory for every skill, required frontmatter on every skill/command, version sync across all manifests + `CHANGELOG.md`, and that `README.md`'s skill/command counts match what's actually on disk. This also runs in CI on every push/PR to `main` (`.github/workflows/validate.yml`).
+It checks JSON validity, required manifest fields, name-matches-directory for every skill, required frontmatter on every skill/command, version sync across all manifests + `CHANGELOG.md`, and that `README.md`'s skill/command counts match what's actually on disk. This also runs in CI on every push/PR to `main` (`.github/workflows/tests.yml`, badge shown as "Tests" on the README).
 
 If you added or removed a skill/command, update:
 - The plugin's own `README.md` (`## Skills (N)` / `## Commands (N)` headers and lists).
