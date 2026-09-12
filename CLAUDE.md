@@ -4,7 +4,7 @@ Guidance for AI agents working in this repository.
 
 ## Project Overview
 
-**pm-skills** — a marketplace of 3 independent plugins (50 skills, 22 commands) for Head-of-Product work on technology/IT products: tech-product requirements/delivery rigor, Head-of-Product leadership workflows, and a markdown-native project memory system.
+**pm-skills** — a marketplace of 3 independent plugins (56 skills, 28 commands) for Head-of-Product work on technology/IT products: tech-product requirements/delivery rigor, Head-of-Product leadership workflows, and a markdown-native project memory system.
 
 ## Repo Structure
 

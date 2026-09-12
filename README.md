@@ -2,7 +2,7 @@
 
 # PM Skills: an AI Operating System for Head-of-Product work
 
-> 50 skills and 22 chained workflows across 3 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system — focused on technology/IT products, not business-vertical domain knowledge.
+> 56 skills and 28 chained workflows across 3 plugins for Claude Code and Claude Cowork. Tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system — focused on technology/IT products, not business-vertical domain knowledge.
 
 Built from a Head-of-Product skill analysis: each skill encodes a concrete workflow (input → framework → output), not a generic prompt. Each command chains one or more skills into an end-to-end process.
 
@@ -14,17 +14,18 @@ Writing a PRD? → `/write-prd`
 Planning delivery (scope/schedule/risk)? → `/plan-delivery-risk`
 Ready to release? → `/gate-release`
 Worried you'll forget something important? → `/init-memory`, then `/ingest`
+Need to pressure-test a decision from every angle? → `/party-mode` or `/sharpen`
 
 If this project helps you, ⭐ the repo.
 
 ## Plugins
 
 <details>
-<summary><strong>1. pm-tech-product</strong> — Requirements and delivery rigor for technology/IT products: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning, process modeling, business rules, security, QA, release gating, access control, audit logging, data consistency, PMBOK scope/schedule/risk/change management (25 skills, 7 commands)</summary>
+<summary><strong>1. pm-tech-product</strong> — Requirements and delivery rigor for technology/IT products: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning/retrospectives, structured brainstorming, process modeling, business rules, security, QA, release gating, access control, audit logging, data consistency, PMBOK scope/schedule/risk/change management (27 skills, 9 commands)</summary>
 
 Fills the gap between "a PRD exists" and "engineering can safely build it" for any tech product with real state, permission, and data-consistency complexity — not tied to a specific business vertical.
 
-**Skills (25):**
+**Skills (27):**
 
 - `prd-writer` — Write a full PRD from a raw brief, idea, or rough workflow description
 - `requirement-analyzer` — Adversarially review a requirement/PRD for missing requirements, conflicts, ambiguity, undefined permission/state/rollback cases
@@ -51,8 +52,10 @@ Fills the gap between "a PRD exists" and "engineering can safely build it" for a
 - `risk-register-manager` — Build and maintain a risk register: identify, analyze probability × impact, plan a response, define monitoring triggers
 - `change-control-manager` — Run a scope/requirement change through Integrated Change Control: impact analysis, decision, baseline update, communication
 - `project-metrics-tracker` — Track delivery performance with PV/EV/AC/SPI/CPI and modern flow metrics, and force the output-vs-outcome distinction
+- `structured-brainstormer` — Run a divergent-then-convergent brainstorm using named techniques (SCAMPER, Five Whys, Reverse Brainstorming, and more)
+- `sprint-retrospective` — Lightweight recurring sprint retro: went well / didn't / puzzling, with owned action items
 
-**Commands (7):**
+**Commands (9):**
 
 - `/write-prd` — Write a full PRD from a raw idea or workflow description, with an adversarial review pass before it's done
 - `/model-business-process` — Formalize a raw business workflow into actors, states, and explicit rules before it becomes a PRD
@@ -61,15 +64,17 @@ Fills the gap between "a PRD exists" and "engineering can safely build it" for a
 - `/setup-access-controls` — Design the full control layer (permissions, approvals, audit logging, numbering) for a feature
 - `/audit-data-consistency` — Audit a feature or flow for cross-system data consistency risk
 - `/plan-delivery-risk` — Plan a large deliverable from scope breakdown through schedule/critical path to a tracked risk register
+- `/brainstorm` — Run a structured divergent-then-convergent brainstorm on a problem
+- `/sprint-retro` — Run a lightweight recurring sprint retrospective with owned action items
 
 </details>
 
 <details>
-<summary><strong>2. pm-leadership</strong> — Head-of-Product leadership workflows: strategy, roadmap, prioritization, copilot orchestrator, weekly digests, 1:1 prep, board updates, hiring, stakeholder mapping, project closure (15 skills, 5 commands)</summary>
+<summary><strong>2. pm-leadership</strong> — Head-of-Product leadership workflows: strategy, roadmap, prioritization, PR/FAQ, advanced elicitation, course correction, simulated debate, copilot orchestrator, weekly digests, 1:1 prep, board updates, hiring, stakeholder mapping, project closure (19 skills, 9 commands)</summary>
 
 For the Head of Product's own operating rhythm and judgment calls: an orchestrator that routes broad questions to the right specialist skill, plus the recurring artifacts of running a product organization.
 
-**Skills (15):**
+**Skills (19):**
 
 - `product-strategist` — Turn company context into product vision, strategic themes, North Star metric, recommended bets, and an investment thesis
 - `roadmap-planner` — Sequence strategic bets into an outcome-oriented roadmap by period, checking capacity and dependencies
@@ -86,14 +91,22 @@ For the Head of Product's own operating rhythm and judgment calls: an orchestrat
 - `product-health-reviewer` — Produce a periodic product health rollup across KPIs, delivery, incidents, feedback, and risk
 - `stakeholder-power-interest-mapper` — Map stakeholders onto a Power × Interest grid and define an engagement approach per quadrant
 - `project-retrospective-closer` — Formally close out a project: acceptance, handover, retrospective, and outcome-vs-intent review
+- `pr-faq-writer` — Stress-test a concept with Amazon's Working Backwards PR/FAQ method before it proceeds to a PRD
+- `advanced-elicitation` — Pressure-test the most recent draft/decision with a menu of named critique techniques
+- `course-correction-planner` — Assess a significant unexpected disruption mid-delivery and produce a continue/adjust/pivot/stop proposal
+- `party-mode-debate` — Simulate a roundtable of distinct, disagreeing personas debating a decision
 
-**Commands (5):**
+**Commands (9):**
 
 - `/set-strategy` — Set product strategy from company context, then sequence it into a roadmap and a prioritized near-term backlog
 - `/copilot` — Route a broad Head-of-Product question to the right specialist skills and synthesize one recommendation
 - `/weekly-review` — Produce a combined personal weekly digest and product health rollup
 - `/evaluate-bet` — Evaluate a product bet, resolve how to acquire it if relevant, and formalize the outcome as a decision memo
 - `/close-project` — Formally close out a completed initiative: retrospective, handover, and an honest outcome-vs-intent review
+- `/write-prfaq` — Stress-test a concept with the PR/FAQ working-backwards method before it proceeds to a PRD
+- `/sharpen` — Pressure-test the most recent draft/decision with a menu of critique techniques
+- `/correct-course` — Assess a mid-delivery disruption and produce a structured change proposal
+- `/party-mode` — Simulate a roundtable debate of distinct, disagreeing personas on a decision or topic
 
 </details>
 

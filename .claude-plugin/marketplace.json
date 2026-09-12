@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "pm-skills",
   "version": "2.0.0",
-  "description": "Structured AI workflows for technology/IT product PMs: 50 domain-specific skills and 22 chained workflows across 3 plugins — tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system.",
+  "description": "Structured AI workflows for technology/IT product PMs: 56 domain-specific skills and 28 chained workflows across 3 plugins — tech-product requirements/delivery rigor, Head-of-Product leadership, and a markdown-native project memory system.",
   "owner": {
     "name": "Louis",
     "email": "louis@janitorlab.com",
@@ -11,13 +11,13 @@
   "plugins": [
     {
       "name": "pm-tech-product",
-      "description": "Requirements and delivery rigor for technology/IT product PMs: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning, business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.",
+      "description": "Requirements and delivery rigor for technology/IT product PMs: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning and retrospectives, structured brainstorming, business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.",
       "source": "./pm-tech-product",
       "category": "product-management"
     },
     {
       "name": "pm-leadership",
-      "description": "Head-of-Product leadership workflows: product strategy, roadmap planning, prioritization, a copilot that routes broad questions to the right specialist skill, weekly digests, 1:1 prep, board updates, hiring briefs, decision memos, product-health rollups, stakeholder power/interest mapping, and project closure/retrospectives.",
+      "description": "Head-of-Product leadership workflows: product strategy, roadmap planning, prioritization, PR/FAQ working-backwards, advanced elicitation, course correction, simulated debate roundtables, a copilot that routes broad questions to the right specialist skill, weekly digests, 1:1 prep, board updates, hiring briefs, decision memos, product-health rollups, stakeholder power/interest mapping, and project closure/retrospectives.",
       "source": "./pm-leadership",
       "category": "product-management"
     },

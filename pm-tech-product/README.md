@@ -1,6 +1,6 @@
 # pm-tech-product
 
-Requirements and delivery rigor for technology/IT product PMs: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning, business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.
+Requirements and delivery rigor for technology/IT product PMs: PRD writing, requirement analysis, state machines, acceptance criteria, user stories, sprint planning and retrospectives, structured brainstorming, business process modeling, business rules, technical impact analysis, security review, QA test-scenario generation, release go/no-go gating, access control, audit logging, cross-system data consistency, and PMBOK-grounded scope/schedule/risk/change management.
 
 ## Overview
 
@@ -10,7 +10,7 @@ Fills the gap between "a PRD exists" and "engineering can safely build it" for a
 
 Add the marketplace and install this plugin (or the whole collection) the same way as any other `pm-skills` plugin — see the root [README.md](../README.md) for the marketplace add/install commands.
 
-## Skills (25)
+## Skills (27)
 
 - **prd-writer** — Write a full PRD from a raw brief, idea, or rough workflow description — problem, scope, business rules, permissions, states, edge cases, acceptance criteria.
 - **requirement-analyzer** — Adversarially review a requirement/PRD for missing requirements, conflicts, ambiguity, and undefined permission/state/rollback cases.
@@ -37,8 +37,10 @@ Add the marketplace and install this plugin (or the whole collection) the same w
 - **risk-register-manager** — Build and maintain a risk register: identify, analyze probability × impact, plan a response, define monitoring triggers.
 - **change-control-manager** — Run a scope/requirement change through Integrated Change Control: impact analysis, decision, baseline update, communication.
 - **project-metrics-tracker** — Track delivery performance with PV/EV/AC/SPI/CPI and modern flow metrics, and force the output-vs-outcome distinction.
+- **structured-brainstormer** — Run a divergent-then-convergent brainstorm using named techniques (SCAMPER, Five Whys, Reverse Brainstorming, and more) instead of an unstructured idea list.
+- **sprint-retrospective** — Lightweight recurring sprint retro: went well / didn't / puzzling, with owned action items.
 
-## Commands (7)
+## Commands (9)
 
 - `/pm-tech-product:write-prd` — Write a full PRD from a raw idea or workflow description, with an adversarial review pass before it's done.
 - `/pm-tech-product:model-business-process` — Formalize a raw business workflow into actors, states, and explicit rules before it becomes a PRD.
@@ -47,6 +49,8 @@ Add the marketplace and install this plugin (or the whole collection) the same w
 - `/pm-tech-product:setup-access-controls` — Design the full control layer for a feature/module: permissions, approval chain, audit logging, record numbering.
 - `/pm-tech-product:audit-data-consistency` — Audit a feature or flow for cross-system data consistency risk and design the reconciliation safety net.
 - `/pm-tech-product:plan-delivery-risk` — Plan a large deliverable from scope breakdown through schedule/critical path to a tracked risk register, in one pass.
+- `/pm-tech-product:brainstorm` — Run a structured divergent-then-convergent brainstorm on a problem.
+- `/pm-tech-product:sprint-retro` — Run a lightweight recurring sprint retrospective with owned action items.
 
 ## Author
 

@@ -1,7 +1,7 @@
 {
   "name": "pm-leadership",
   "version": "2.2.0",
-  "description": "Head-of-Product leadership workflows: product strategy, roadmap planning, prioritization, a copilot that routes broad questions to the right specialist skill, weekly digests, 1:1 prep, board updates, hiring briefs, decision memos, product-health rollups, stakeholder power/interest mapping, and project closure/retrospectives.",
+  "description": "Head-of-Product leadership workflows: product strategy, roadmap planning, prioritization, PR/FAQ working-backwards, advanced elicitation, course correction, simulated debate roundtables, a copilot that routes broad questions to the right specialist skill, weekly digests, 1:1 prep, board updates, hiring briefs, decision memos, product-health rollups, stakeholder power/interest mapping, and project closure/retrospectives.",
   "author": {
     "name": "Louis",
     "email": "louis@janitorlab.com"
@@ -13,6 +13,9 @@
     "strategy",
     "roadmap",
     "prioritization",
+    "prfaq",
+    "working-backwards",
+    "elicitation",
     "1-on-1",
     "board-update",
     "hiring",
