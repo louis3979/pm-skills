@@ -24,7 +24,7 @@ This is the workhorse of the memory system. Run it every time new PM-relevant in
    - **assumption** — an implicit, unvalidated claim the artifact rests on but doesn't prove.
 4. **Check the promotion threshold before writing to `knowledge/`.** An observation only gets promoted to a durable fact/pattern in `knowledge/` once independently corroborated (e.g. 3+ independent observations of the same pattern from different sources). If this is the first or second time you've seen it, note it as provisional in the ingestion record and say explicitly what's still missing for promotion — do not write it into `knowledge/` yet.
 5. **Update `hypotheses/`** if this artifact bears on an existing hypothesis (add an evidence row, recompute confidence, show the old → new delta) or clearly suggests a new one (draft it via the same process as `memory-hypothesize`).
-6. **Log a stakeholder touchpoint** in `stakeholders/<person>.md` if a named person was involved — date, artifact link, one-line summary of what's new (concern, ask, sentiment shift).
+6. **Log a stakeholder touchpoint** in `stakeholders/<person>.md` if a named person was involved — date, artifact link, one-line summary of what's new (concern, ask, sentiment shift). **If no file exists yet for this person**, create one now using `stakeholders/_SCHEMA.md`'s template (role, influence/interest, cadence — fill what's inferable from this artifact, mark the rest to confirm later) and add them to `stakeholders/INDEX.md`'s table — don't skip logging just because this is their first appearance.
 7. **Check whether any hypothesis's stated decision trigger just fired.** If so, draft a `pending` decision in `decisions/` per the `memory-decide` process — never mark it `decided` yourself.
 8. **Close the loop**: report exactly what was touched. Never leave it ambiguous.
 
@@ -35,7 +35,7 @@ Files created/updated (not a single new standalone doc):
 - `ingestion/<shape>/<date>-<slug>.md` (new, tagged synthesis)
 - `knowledge/...` (updated only if promotion threshold met this round)
 - `hypotheses/<topic>.md` (updated or created)
-- `stakeholders/<person>.md` (touchpoint appended, if applicable)
+- `stakeholders/<person>.md` (touchpoint appended, or created from `_SCHEMA.md` on first mention, if applicable)
 - `decisions/<date>-<slug>.md` (new, status `pending`, only if a decision trigger fired)
 
 Closing report format:

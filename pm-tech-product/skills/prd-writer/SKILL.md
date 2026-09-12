@@ -21,7 +21,7 @@ Use this for anything large enough to span more than one sprint or touch more th
 4. **Define Scope**: In-scope / Out-of-scope (with reason) / Future consideration.
 5. **Map the User Flow**: the end-to-end path, including the unhappy paths, not just the golden path.
 6. **Derive Business Rules**: conditions that gate any transition/calculation, expressed unambiguously (`IF ... AND ... THEN ...`) — hand off to `business-rule-designer` if these get numerous.
-7. **Define Permissions**: who can do what action, explicitly — never leave a permission implicit or "TBD."
+7. **Define Permissions**: who can do what action, explicitly — never leave a permission implicit. If the brief genuinely doesn't say who should be allowed to do something, don't assert a default (Yes/No) in the table as if it were settled — write the cell as `Open — see Open Questions` and add the actual question there, so the table and the Open Questions section never contradict each other.
 8. **Define State Transitions**: for every entity with a lifecycle, the states and legal/illegal transitions — use `state-machine-designer` if this gets complex enough to warrant its own artifact.
 9. **Find Edge Cases**: error states, empty/max data, concurrent actions, partial completion, cancellation, permission edge cases — list the ones you found, don't just say "edge cases considered."
 10. **Write Functional & Non-functional Requirements**, then **Acceptance Criteria** per requirement (Given/When/Then) — use `acceptance-criteria-generator` for a dedicated pass if criteria need to be exhaustive.
@@ -67,6 +67,7 @@ Use this for anything large enough to span more than one sprint or touch more th
 ## Permissions
 | Actor | Action | Allowed? |
 |---|---|---|
+[use "Open — see Open Questions" instead of guessing Yes/No when the brief didn't actually settle it]
 
 ## State Transitions
 [states, legal/illegal transitions per entity]

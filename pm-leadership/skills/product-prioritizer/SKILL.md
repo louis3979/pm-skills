@@ -21,6 +21,7 @@ Use this when 5+ initiatives compete for the same capacity and a defensible, exp
 4. **Adjust for factors the raw score doesn't capture**: dependency (can this even be built before its prerequisite?), strategic fit (does it serve a stated strategic theme?), risk, sequencing, tech debt reduction, and opportunity cost of NOT doing something else.
 5. **Sanity-check the ranking** against intuition — if the result is wildly counter to what an experienced PM would expect, look for a mis-scored input (usually Effort underestimated or Confidence overestimated) before trusting the output.
 6. **Separate out Strategic Overrides**: anything that must be done regardless of score (compliance, contractual commitment) — flag and exclude from the main ranking so it doesn't distort other scores.
+6a. **Handle items with no natural Reach/Impact** (pure tech debt, infra migrations, security hardening): don't force a fake user-facing score on them. List them in their own short section instead — what they unblock or protect against, and any initiative above whose score/risk they materially affect (e.g. an infra migration a top-ranked feature secretly depends on) — so they're visibly tracked without corrupting the scored ranking.
 7. **Bucket into Do Now / Do Next / Do Later / Don't Do**, sized to actual near-term capacity, not just a sorted list with no cut lines.
 
 ## Output
@@ -38,6 +39,10 @@ Use this when 5+ initiatives compete for the same capacity and a defensible, exp
 ## Strategic Overrides (excluded from ranking)
 | Initiative | Reason mandatory |
 |---|---|
+
+## Unscored: Tech Debt / Infra (no natural Reach/Impact)
+| Initiative | What it unblocks/protects against | Affects which scored item(s) |
+|---|---|---|
 
 ## Do Now
 - ...
