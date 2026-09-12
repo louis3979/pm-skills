@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/louis3979/pm-skills/blob/main/LICENSE)
+[![Validate](https://github.com/louis3979/pm-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/louis3979/pm-skills/actions/workflows/validate.yml)
 
 # PM Skills: an AI Operating System for Head-of-Product work
 
@@ -186,6 +187,18 @@ done
 **Commands** are user-triggered workflows invoked with `/command-name`. Each chains one or more skills in the same plugin into an end-to-end process, and ends by suggesting relevant next commands.
 
 **Plugins** group related skills and commands into an installable package.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a skill/command and the release process. `python3 scripts/validate.py` checks manifest/frontmatter/README consistency (also runs in CI).
+
+## Security
+
+See [SECURITY.md](SECURITY.md).
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

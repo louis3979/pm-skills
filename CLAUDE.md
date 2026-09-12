@@ -10,7 +10,12 @@ Guidance for AI agents working in this repository.
 
 ```
 pm-skills/
-├── .claude-plugin/marketplace.json   <- root marketplace manifest (lists all 2 plugins)
+├── .claude-plugin/marketplace.json   <- root marketplace manifest (lists all 3 plugins)
+├── .github/workflows/validate.yml    <- CI: runs scripts/validate.py on every push/PR to main
+├── scripts/validate.py               <- manifest/frontmatter/README-sync validator, no dependencies
+├── CHANGELOG.md                      <- release source of truth
+├── CONTRIBUTING.md                   <- how to add a skill/command, release process
+├── SECURITY.md                       <- security policy
 ├── LICENSE                           <- MIT
 ├── README.md                         <- public documentation
 └── pm-{name}/                        <- plugin directories
@@ -30,7 +35,12 @@ pm-skills/
 - Skills can be force-loaded with `/plugin-name:skill-name` or `/skill-name`.
 - Keep frontmatter lean (always loaded); put detail in the SKILL.md body (loaded when triggered).
 
+## Versioning & Releases
+
+`CHANGELOG.md` is the source of truth — the newest `## vX.Y.Z — YYYY-MM-DD` heading is the current version. `marketplace.json` and every `plugin.json` must carry that same version (`scripts/validate.py` fails otherwise). Semver: breaking (renaming/removing a skill or command) = major; new skills/commands or changed behavior = minor; fixes/docs = patch. Full procedure: `CONTRIBUTING.md § Releasing`.
+
 ## After any skill/command change
 
-1. If skills/commands were added or removed, update the counts in `README.md` (headline + per-plugin summary line) and `marketplace.json`'s `description`.
-2. Keep `marketplace.json` version and each `plugin.json` version in sync.
+1. Run `python3 scripts/validate.py` (also runs in CI on push/PR to `main`).
+2. If skills/commands were added or removed, update: the plugin's own `README.md` (`## Skills (N)` / `## Commands (N)`), the root `README.md` (headline counts + that plugin's summary line), and `marketplace.json`'s `description` if totals changed.
+3. Add a `CHANGELOG.md` entry and bump versions per `CONTRIBUTING.md § Releasing`.
